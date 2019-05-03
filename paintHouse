@@ -1,0 +1,10 @@
+class Sol:
+    def paintHouse(self,costs):
+        m=0
+        for i in range(len(costs)):
+            m+=min(costs[i])
+        return m
+
+if __name__ == '__main__':
+    p1=Sol()
+    print(p1.paintHouse([[17,2,17],[16,16,5],[14,3,19]]))
